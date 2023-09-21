@@ -6,23 +6,41 @@
 # 1) A partir de una lista vacía, utilizar un ciclo while para cargar allí números negativos del -15 al -1
 
 # In[1]:
-
-
-
+minus = list()
+num = -15
+while (num < 0):
+    minus.append(nun)
+    num += 1
+print(minus)
 
 
 # 2) ¿Con un ciclo while sería posible recorrer la lista para imprimir sólo los números pares?
 
 # In[3]:
+{n=0
+while (n<16):
+    if minus[n]%2==0:
+        NLpair.append(minus[n])
+        n+=1
+    else:
+        n+=1
+print (NLpair)}
+#El código entre llaves no puede ser ejecutado correctamente. Tengo un error «list index out of range» pero mi while condiciona todo al n<16. Aún así, he comprobado que mi lista NLpair si adquiere los números pares de
+#la lista minus. Lo he comprobado con una siguiente línea de código:
 
+print (NLpair)
+NLpair = list()
 
-
+#Coloqué y retiré un numeral al principio de uno de los dos para reiniciar los valores de la lista, ejecutar el código con error en el índice y luego imprimir los valores de la lista. Estos son los valores:
+[-14, -12, -10, -8, -6, -4, -2]
 
 
 # 3) Resolver el punto anterior sin utilizar un ciclo while
 
 # In[4]:
-
+for elemento in minus:
+    if elemento % 2 == 0:
+        NLpair.append(elemento)
 
 
 
@@ -30,23 +48,30 @@
 # 4) Utilizar el iterable para recorrer sólo los primeros 3 elementos
 
 # In[7]:
-
+for elemento in minus[:3]:
+  print (elemento)
 
 
 
 # 5) Utilizar la función **enumerate** para obtener dentro del iterable, tambien el índice al que corresponde el elemento
 
 # In[9]:
-
+for elemento, klave in enumerate(minus)
+  print (elemento, klave)
 
 
 
 # 6) Dada la siguiente lista de números enteros entre 1 y 20, crear un ciclo donde se completen los valores faltantes: lista = [1,2,5,7,8,10,13,14,15,17,20]
 
 # In[10]:
-
-
-
+n=0
+while n<20:
+    if lista[n]==n+1:
+        n+=1
+    else:
+        lista.insert(n,n+1)
+  
+n+=1
 
 
 # In[11]:
